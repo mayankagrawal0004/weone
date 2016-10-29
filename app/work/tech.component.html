@@ -1,0 +1,29 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      {{pageTitle}}
+    </div>
+<div class="container-fluid">
+<div class="row-fluid">
+     <div class="panel-body panel-success">
+<div class="span12">
+	   <div class="tab-content ">
+		 <div class="tab-pane active">
+          <table class ='table'>
+            <tbody> 
+             <tr *ngFor='let prod of tech'>
+              <td>{{prod.id}}</td>             
+              <td>{{prod.techtype}}</td>
+              <td>{{prod.techname}}</td>
+              <td><ai-star [rating]='prod.techrating'
+              (ratingClicked)='onRatingClicked($event,prod.techname)'></ai-star></td>
+              </tr>
+          </tbody>
+        </table>  
+        </div>
+	</div>
+</div>
+     </div>
+</div>
+</div>
+</div>

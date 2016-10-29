@@ -1,0 +1,48 @@
+<div class="panel panel-danger sortable">
+	<div class="panel-heading" (click)='onclick()'>Click here for AlternateView</div>
+</div>
+<div class='panel panel-primary'>
+	<div class='panel-heading' style='font-size:large'>
+		Schakra (June15 - Present)
+	</div>
+	<div class='panel-heading' style='font-size:large'>
+		Client:Microsoft
+	</div>
+</div>
+
+<tr *ngFor='let profd of prof'>
+<td *ngIf='!profd.projecttype'>    
+
+                            
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    {{profd.project}}
+    <button type="button" class="btn btn-info" (click)='toggleImage()'>{{showButton ? 'Hide' : 'Show'}}Responsibilities!</button>
+  </div>
+  <div class="panel-body"> <h4>{{profd.projectDescrip}}</h4></div>
+    <button type="button" class="btn btn-default">{{profd.projectyear}}</button>
+    
+  <button type="button" class="btn btn-danger" *ngFor="let pr of profd.projecttech">{{pr}}</button>
+  <div *ngIf='showButton'>
+  <div  class="panel-footer" *ngFor="let response of profd.projectresponsiblity"><ul><li>{{response}}</li></ul></div>
+  </div>
+</div>
+
+</td>
+</tr>
+<div class='panel panel-primary'>
+  <div class='panel-heading' style='font-size:large'>
+     Project Undertaken During Masters and Under Graduate Program: </div>
+</div>
+<div *ngFor='let profd of prof'>
+
+ <div class="panel panel-success" *ngIf='profd.projecttype'>
+      <div class="panel-heading">{{profd.project}}</div>
+      <div class="panel-body">{{profd.projectDescrip}}</div>
+       <button type="button" class="btn btn-default">{{profd.projectyear}}</button>
+      <button type="button" class="btn btn-danger" *ngFor="let pr of profd.projecttech">{{pr}}</button>
+      
+    </div> 
+    
+  </div>

@@ -1,0 +1,24 @@
+li {
+    font-size: large;
+    font-style: italic;
+    color:darkblue;
+}
+.navbar-default .navbar-nav > li > a {
+    color: rgb(253, 253, 253);
+}
+div.panel-heading {
+   font-size: x-large; 
+}
+.navbar-default {
+    background-color: rgba(13, 14, 14, 0.2);
+    border-color: rgba(231, 231, 231, 0.91);
+}
+body {
+     width: 100%;
+    position: relative;
+     background: url("./laptop.jpg");
+     background-size: cover;
+     background-repeat:no-repeat;
+    display: compact;
+     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

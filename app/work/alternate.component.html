@@ -1,0 +1,49 @@
+<div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBackclick()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+</div>
+<div class="container newdata">
+  <div class="page-header">
+    <h1 id="timeline">Timeline {{pageTitle}}</h1>
+  </div>
+  <ul class="timeline" *ngFor='let prod of prof'>
+      
+    <li *ngIf="prod.id == 1 || prod.id == 4 || prod.id == 7">
+      <div class="timeline-badge" ><i class="glyphicon glyphicon-check"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">{{prod.project}}</h4>
+          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{prod.projectyear}}</small></p>
+        </div>
+        <div class="timeline-body">
+          <p>{{prod.projectDescrip}}</p>
+        </div>
+      </div>
+    </li>
+    
+      
+    <li class="timeline-inverted" *ngIf="prod.id == 2 || prod.id == 5 || prod.id == 8">
+      <div class="timeline-badge warning" ><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">{{prod.project}}</h4>
+        </div>
+        <div class="timeline-body">
+          <p>{{prod.projectDescrip}}></p>
+        </div>
+      </div>
+    </li>  
+    <li *ngIf="prod.id == 3 || prod.id == 6 || prod.id == 9">
+      <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+      <div class="timeline-panel">
+        <div class="timeline-heading">
+          <h4 class="timeline-title">{{prod.project}}</h4>
+        </div>
+        <div class="timeline-body">
+          {{prod.projectDescrip}}
+        </div>
+      </div>
+    </li>  
+  </ul>
+</div>

@@ -1,0 +1,56 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      {{yourName}}
+    </div>
+</div>
+<div class="container-fluid">
+            <div class="row-fluid">
+<div class="span12">
+    <div class="panel-body"  >
+			<div class="tab-content ">
+			  <div class="tab-pane active" *ngIf='yourName.length!=0' id="1">
+          <input type ="text" [(ngModel)] = 'listItem'>
+          <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+          <table class ='table'>
+            <thead><button type="button" (click)='toggleImage()'>{{showButton ? 'Hide' : 'Show'}}Me!</button></thead>
+          <tbody>
+            <tr *ngFor='let prod of proddebug | productFilter:listItem'>
+              <td>{{prod.productId}}</td>             
+              <td>
+                <a [routerLink]="['/products', prod.productId]">
+                            {{prod.productName |lowercase}}
+                </a>
+              </td>
+              <td>{{prod.productCode}}</td>
+              <td>{{prod.releaseDate}}</td>
+              <td>{{prod.descriptione}}</td>
+              <td>{{prod.price}}</td>
+              <td><ai-star [rating]='prod.starRating'
+              (ratingClicked)='onRatingClicked($event)'></ai-star></td>
+              <td>
+                <img *ngIf='showButton' [src]='prod.imageUrl' [style.width.px] ='imageWidth' [style.margin.px] ='imageMargin'>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+				</div>
+				<div class="tab-pane" id="2">
+          <pm-personal></pm-personal>
+          
+          <h3>Notice the gap between the content and tab after applying a background color</h3>
+				</div>
+        <div class="tab-pane" id="3">
+          <h3>add clearfix to tab-content (see the css)</h3>
+				</div>
+			</div>
+    </div>
+</div>
+<div class="row"  >
+            <div class="text-center">Developed by:</div>
+            <h3 class="text-center">Mayank Agrawal</h3>
+
+            <div class="text-center">@mayank</div>
+            <div class="text-center">
+                
+            </div>
+  </div>

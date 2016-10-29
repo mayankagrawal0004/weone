@@ -1,0 +1,82 @@
+[
+    {
+         "id": 1,
+        "techtype":"Algorithms" ,
+        "techname": "Data Structure",
+        "techrating": 3
+},{
+         "id": 2,
+          "techtype":"Development Tool(IDE)" ,
+        "techname": "Visual Studio",
+        "techrating": 4
+},{
+    "id": 3,
+          "techtype":"Development Tool(IDE)" ,
+        "techname": "Eclipse",
+        "techrating": 4
+},{
+         "id": 4,
+          "techtype":"Programming Languages" ,
+        "techname": "C#",
+        "techrating": 3
+},{
+    "id": 5,
+          "techtype":"Programming Languages" ,
+        "techname": "JAVA",
+        "techrating": 3
+},{
+         "id": 6,
+          "techtype":"Web Technologies" ,
+        "techname": "ASP.Net",
+        "techrating": 4
+},{
+    "id": 7,
+          "techtype":"Web Technologies" ,
+        "techname": "Bootstrap",
+        "techrating": 4
+},{
+    "id": 8,
+          "techtype":"Web Technologies" ,
+        "techname": "XML Web Service",
+        "techrating": 4.5
+},{
+    "id": 9,
+          "techtype":"Databases" ,
+        "techname": "SQL Server",
+        "techrating": 3
+},{
+    "id": 10,
+          "techtype":"Configuration & Version Control Tools" ,
+        "techname": "GitHub",
+        "techrating": 2.6
+},{
+    "id": 11,
+          "techtype":"Configuration & Version Control Tools" ,
+        "techname": "Team Foundation Server-TFS",
+        "techrating": 3
+},{
+    "id": 12,
+          "techtype":"Scripting & Markup Languages" ,
+        "techname": "jQuery",
+        "techrating": 4
+},{
+    "id": 13,
+          "techtype":"Scripting & Markup Languages" ,
+        "techname": ", JSON",
+        "techrating": 4
+},{
+    "id": 14,
+          "techtype":"Scripting & Markup Languages" ,
+        "techname": "AngularJS",
+        "techrating": 4
+},{
+    "id": 15,
+          "techtype":"Scripting & Markup Languages" ,
+        "techname": "HTML5",
+        "techrating": 4
+},{
+    "id": 16,
+          "techtype":"Scripting & Markup Languages" ,
+        "techname": "JavaScript",
+        "techrating": 4
+}]

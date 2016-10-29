@@ -1,0 +1,110 @@
+[
+    {
+      "id":1,
+      "projecttype":"",
+      "project" : "OFFICE365",
+      "projectyear":2015,
+      "projecttech":["JavaScript","AngularJS","HTML","CSS","C#","Janus","MYSQL","Selenium testing"],
+      "projectDescrip" : "The Office 365 service consists number of products and services. All of Office 365's components can be managed and configured through an online portal, users can be added to office 365 manually. Office 365 main features include Outlook, Microsoft office, Excel, Yammers and this are available in a different number of subscriptions which is aimed at different needs, segments and different price. For example, Personal, Home, Business, Enterprise.",
+      "projectresponsiblity":
+      ["Involved in application development for various office365 web applications using ASP.Net MVC / C# / SQL Server / AngularJS / AJAX / HTML / CSS",
+"Version control for applications done using Microsoft Source Depo.",
+"Create attractive UI using CSS, HTML, AngularJS.",
+"Designed and implemented applications using .NET Framework 4.5.",
+"Interacted with Clients on a weekly basis to gather requirements and involved in creating BRDs based",
+"Creating Test cases ensuring that the developed software performs as detailed by the business requirements",
+"Involved in maintenance of applications developed."]
+         
+    },{
+      "id":2,
+      "projecttype":"",
+      "project" : "OSP",
+      "projectyear":2016,
+      "projecttech":["JavaScript","AngularJS","HTML","CSS","C#","Janus","MYSQL"],
+      "projectDescrip" : "Office Service Pulse is company Internal website that will help to track the health of Office 365 products and services. Based on factors like availability, storage, region. OSP application consists of features like Escalation which is used to raise the alert and assign to developers. Health shows the performance of Office 365 products. OnCall have the details of engineers who are on call for a week for the associated office 365 products.",
+      "projectresponsiblity":[
+	"Involved in database table design and writing stored procedures",
+"Interacted with business analyst to understand the business requirements.",
+"Application development, enhancements and maintenance using C#,", 
+"Design and Develop front end interface along with JavaScript / AngularJS /HTML / CSS",
+"Implemented various Validation controls for client-side validation of Server Controls.",
+"Provided technical guidance and support to end-users by developing documentations required.",
+"Performed Unit Testing, Integration Testing and Regression Testing of the application.",
+"Actively involved in Bug Fixing during the build and deployment process and debugging."
+      ]
+      
+    },{
+      "id":3,
+      "projecttype":"",
+      "project" : "OMS",
+      "projectyear":2016,
+      "projecttech":["MySQL", "Mongo", "RUBY" ,"LINUX"],
+      "projectDescrip" : "Microsoft Operations Management Suite (OMS) is cloud-based IT management solution that will helps to protect and manage the cloud infrastructure. OMS can integrate with System Center components such as System Center Operations Manager to extend existing management investments into the cloud.",
+      "projectresponsiblity":[
+  "Developing solutions for OMS Linux agent by creating Fluentd plugins", 
+"Plugins will read the logs from different services, parsing the logs into fields, tokenize the logs and push the data to OMS cloud as JSON object using Ruby language.", 
+"Some of the services are MySQL, Mongo, Apache, VMWare, etc.",
+"Created database queries which will run every hour using Cron job to push consistent data to OMS.",
+"Created test query to check for logs on OMS portal and report back to users in case of any failures. "]
+      
+    },{
+      "id":4,
+      "projecttype":"edu",
+      "project" : "LinkedU",
+      "projectyear":2015,
+      "projecttech":["c#","Mysql","HTML","CSS","Javascript"],
+      "projectDescrip" : "A web-based LinkedIn app for high school scholars to link with universities and peers. The app targets high school students who are looking to promote themselves to the university communities. It also targets university recruiters for students with high academic standards.",
+      "projectresponsiblity":[]
+    },{
+      "id":5,
+      "projecttype":"edu",
+      "project" : "Movie Rating Analysis",
+      "projectyear":2014,
+      "projecttech":["HDFS","MapReduce"],
+      "projectDescrip" : "Worked on three different datasets that contains more than 2000000 records in unstructured format using Hadoop architecture. The goal here to find out the movie genre which is most liked by the teenagers.",
+      "projectresponsiblity":[]
+      
+    },{
+      "id":6,
+      "projecttype":"edu",
+      "project" : "7 PM –Restaurant searching website",
+      "projectyear":2014,
+      "projecttech":["Java", "JavaScript", "MySQL","JSON"],
+      "projectDescrip" : "7 PM is an online web portal which helps the user to find a restaurant based on zip code and help them to find the direction and weather forecast based on RESTful web services and API from Google maps, Yelp, and Forecast.IO. It also stores the data of the user in the database to make future searches of a user easier.",
+      "projectresponsiblity":[]
+      
+    }
+    ,{
+      "id":7,
+      "projecttype":"edu",
+      "project" : "Internship Registration",
+      "projectyear":2013,
+      "projecttech":["office", "Viso"],
+      "projectDescrip" : "Designed and analyzed a Software based Internship Registration system by automating the existing manual system.  Major tasks involved requirement gathering; cost benefit analysis; prepared data models using DFD and tested the entire system in all phases of SDLC. ",
+      "projectresponsiblity":[]
+      
+    }
+    ,{
+      "id":8,
+      "projecttype":"edu",
+      "project" : "E-Recruitment Cell",
+      "projectyear":2013,
+      "projecttech":["Java", "JavaScript", "MySQL"],
+      "projectDescrip" : "E-Recruitment cell is fully integrated Web-based and a central recruitment Process system for organization and student. The main goal was to simplify the recruitment process. In this website job seekers can register themselves online and apply for a job and attend the exam.",
+      "projectresponsiblity":[]
+      
+    }
+    ,{
+      "id":9,
+      "projecttype":"edu",
+      "project" : "OnWheels",
+      "projectyear":2012,
+      "projecttech":["Java", "JavaScript", "MySQL"],
+      "projectDescrip" : "On Wheels is a web portal for Hyundai Indore organization which helps Hyundai customer to keep the track of their vehicle maintained,  insurance and update them about all the accessories of the registered vehicle. ",
+      "projectresponsiblity":[]
+      
+    }
+]
+
+
+
