@@ -36,13 +36,7 @@
         "lite-server": "^2.2.0",
         "tslint": "^3.7.4",
         "typescript": "^2.0.2",
-        "typings": "^1.0.4",
-        "gulp":"3.9.1",
-        "gulp-sourcemaps":"2.2.0",
-        "del":"2.2.2",
-        "underscore":"1.8.3",
-        "angular2":"2.0.0-beta.17",
-        "twitter":"1.4.0"
+        "typings": "^1.0.4"
     },
     "repository": {}
 }
