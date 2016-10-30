@@ -1,29 +1,32 @@
 
-<div class="panel panel-primary">
-    <div class="panel-heading">
-      {{pageTitle}}
-    </div>
-<div class="container-fluid">
-<div class="row-fluid">
-     <div class="panel-body panel-success">
-<div class="span12">
-	   <div class="tab-content ">
-		 <div class="tab-pane active">
-          <table class ='table'>
-            <tbody> 
-             <tr *ngFor='let prod of tech'>
-              <td>{{prod.id}}</td>             
-              <td>{{prod.techtype}}</td>
-              <td>{{prod.techname}}</td>
-              <td><ai-star [rating]='prod.techrating'
-              (ratingClicked)='onRatingClicked($event,prod.techname)'></ai-star></td>
-              </tr>
-          </tbody>
-        </table>  
-        </div>
+<div class="panel panel-success">
+	<div class="panel-heading">
+		{{pageTitle}}
 	</div>
 </div>
-     </div>
-</div>
-</div>
-</div>
+<table class="table">
+	<thead>
+		<tr class="info">
+			<th>TechType</th>
+			<th>TechName</th>
+			<th>ClickRating</th>
+		</tr>
+	</thead>
+	<tbody *ngFor='let prod of tech'>
+		<tr *ngIf='prod.id % 2 != 0' class="success">
+			<td><h5>{{prod.techtype}}</h5></td>
+			<td><h5>{{prod.techname}}</h5></td>
+			<td>
+				<ai-star [rating]='prod.techrating' (ratingClicked)='onRatingClicked($event,prod.techname)'></ai-star>
+			</td>
+		</tr>
+		<tr *ngIf='prod.id % 2 == 0' class="danger">
+			<td><h5>{{prod.techtype}}</h5></td>
+			<td><h5>{{prod.techname}}</h5></td>
+			<td>
+				<ai-star [rating]='prod.techrating' (ratingClicked)='onRatingClicked($event,prod.techname)'></ai-star>
+			</td>
+		</tr>
+	</tbody>
+</table>	
+

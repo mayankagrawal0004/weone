@@ -18,7 +18,8 @@ constructor(private _productservice: ProductService){
 }
 
     ngOnInit():void{
-this._productservice.getTechs().subscribe(tech => this.tech = tech,error => this.errorMessage = <any>error);
+this.tech = this._productservice.getTechs();
+//this._productservice.getTechs().subscribe(tech => this.tech = tech,error => this.errorMessage = <any>error);
 }
 onRatingClicked(message:string,word:string):void{
     this.pageTitle =  message + "in " + word;

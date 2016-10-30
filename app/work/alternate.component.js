@@ -18,11 +18,11 @@ var AlternateComponent = (function () {
         this.pageTitle = "Project Details";
     }
     AlternateComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._productService.getDetails().subscribe(function (prof) { return _this.prof = prof; }, function (error) { return _this.errorMessage = error; });
+        this.prof = this._productService.getDetails();
+        //          this._productService.getDetails().subscribe(prof => this.prof = prof,error => this.errorMessage = <any>error);
     };
     AlternateComponent.prototype.onBackclick = function () {
-        this._router.navigate(['/professional']);
+        this._router.navigate(['/prof']);
     };
     AlternateComponent = __decorate([
         core_1.Component({

@@ -1,10 +1,12 @@
-export interface IProfessional{
+export interface IProfessional
+{
          id: number,
          projecttype: string,
         project: string,
         projectyear: number,
-        projecttech: [ string ],
+        projecttech: string [],
         projectDescrip: string,
-         projectresponsiblity: [ string ]
-        }
+         projectresponsiblity: string []
+        
+ }
 

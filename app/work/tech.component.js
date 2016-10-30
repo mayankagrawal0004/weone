@@ -16,8 +16,8 @@ var TechComponent = (function () {
         this.pageTitle = "Tech Gyan";
     }
     TechComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._productservice.getTechs().subscribe(function (tech) { return _this.tech = tech; }, function (error) { return _this.errorMessage = error; });
+        this.tech = this._productservice.getTechs();
+        //this._productservice.getTechs().subscribe(tech => this.tech = tech,error => this.errorMessage = <any>error);
     };
     TechComponent.prototype.onRatingClicked = function (message, word) {
         this.pageTitle = message + "in " + word;

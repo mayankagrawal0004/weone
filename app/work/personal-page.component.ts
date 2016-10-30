@@ -21,7 +21,7 @@ private _router: Router){
 }
 
 ngOnInit():void{
-this._profservice.getDetails().subscribe(prof => this.prof = prof,error => this.errorMessage = <any>error);
+this.prof = this._profservice.getDetails();
 //this._productservice.getProducts().subscribe(proddebug => this.proddebug = proddebug,error => this.errorMessage = <any>error);
 
     console.log("ng-onint running");

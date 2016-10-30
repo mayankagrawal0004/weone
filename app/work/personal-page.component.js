@@ -19,8 +19,7 @@ var PersonalPageComponent = (function () {
         this.showButton = false;
     }
     PersonalPageComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._profservice.getDetails().subscribe(function (prof) { return _this.prof = prof; }, function (error) { return _this.errorMessage = error; });
+        this.prof = this._profservice.getDetails();
         //this._productservice.getProducts().subscribe(proddebug => this.proddebug = proddebug,error => this.errorMessage = <any>error);
         console.log("ng-onint running");
     };

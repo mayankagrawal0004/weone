@@ -18,12 +18,13 @@ private _router: Router) {
     }
 
     ngOnInit(): void {
-                this._productService.getDetails().subscribe(prof => this.prof = prof,error => this.errorMessage = <any>error);
+        this.prof = this._productService.getDetails();
+      //          this._productService.getDetails().subscribe(prof => this.prof = prof,error => this.errorMessage = <any>error);
 
     }
     
     onBackclick(): void {
-        this._router.navigate(['/professional']);
+        this._router.navigate(['/prof']);
     }
 
     
