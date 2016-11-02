@@ -21,9 +21,9 @@
     <button type="button" class="btn btn-info" (click)='toggleImage()'>{{showButton ? 'Hide' : 'Show'}}Responsibilities!</button>
   </div>
   <div class="panel-body"> <h4>{{profd.projectDescrip}}</h4></div>
-    <button type="button" class="btn btn-default">{{profd.projectyear}}</button>
-    
-  <button type="button" class="btn btn-danger" *ngFor="let pr of profd.projecttech">{{pr}}</button>
+   
+    <h3>{{profd.projectyear}} <span class="label label-default color:red" *ngFor="let pr of profd.projecttech">{{pr}}</span></h3>
+ 
   <div *ngIf='showButton'>
   <div  class="panel-footer" *ngFor="let response of profd.projectresponsiblity"><ul><li>{{response}}</li></ul></div>
   </div>
@@ -40,8 +40,7 @@
  <div class="panel panel-success" *ngIf='profd.projecttype'>
       <div class="panel-heading">{{profd.project}}</div>
       <div class="panel-body">{{profd.projectDescrip}}</div>
-       <button type="button" class="btn btn-default">{{profd.projectyear}}</button>
-      <button type="button" class="btn btn-danger" *ngFor="let pr of profd.projecttech">{{pr}}</button>
+      <h4>{{profd.projectyear}} <span class="label label-default" *ngFor="let pr of profd.projecttech">{{pr}}</span></h4>
       
     </div> 
     
